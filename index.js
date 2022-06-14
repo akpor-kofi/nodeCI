@@ -3,6 +3,10 @@ const mongoose = require("mongoose");
 const cookieSession = require("cookie-session");
 const passport = require("passport");
 const bodyParser = require("body-parser");
+const dotenv = require("dotenv");
+
+dotenv.config({ path: "./config.env" });
+
 const keys = require("./config/keys");
 
 require("./models/User");
